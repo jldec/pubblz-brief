@@ -1,10 +1,9 @@
-// pub-theme-brief navigation code (sans hammer jquery plugin)
+// pub-theme-brief navigation code
 // copyright 2015 jurgen leschner (github/jldec) - MIT license
 
 $(function(){
 
   var $body = $('body');
-  var body = $body.get(0);
   var $boxes = $('.box');
   var offsets = [];
   calibrate();
@@ -12,13 +11,7 @@ $(function(){
   $(window).resize(calibrate);
 
   // touch assignments
-  var h = new Hammer(body);
-  h.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
-  h.on('tap', toggleMode);
-  h.on('swipeup',   prev);
-  h.on('swipeleft', prev);
-  h.on('swipedown', next);
-  h.on('swiperight',next);
+  new Hammer($body.get(0)).on('swipeleft', prev).on('swiperight',next);
 
   // keyboard assignments
   $body.keydown(function(evt) {
