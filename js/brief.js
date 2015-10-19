@@ -47,10 +47,10 @@ $(function(){
   $(window).resize(calibrate);
 
   // touch assignments
-  $body.hammer().on('doubletap', function(evt) {
-    // console.log('doubletap');
-    return toggleMode(evt);
-  });
+  $body.hammer()
+  .on('doubletap', function(evt) { return toggleMode(evt); })
+  .on('swipeleft', function(evt) { return prev(evt); })
+  .on('doubletap', function(evt) { return next(evt); });
 
   // keyboard assignments
   $body.keydown(function(evt) {
