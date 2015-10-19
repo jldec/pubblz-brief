@@ -1,4 +1,4 @@
-// pub-theme-brief navigation code
+// pub-theme-brief navigation code (sans hammer jquery plugin)
 // copyright 2015 jurgen leschner (github/jldec) - MIT license
 
 $(function(){
