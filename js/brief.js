@@ -1,4 +1,4 @@
-// pub-theme-brief navigation code - simplified touch.
+// pub-theme-brief navigation code
 // copyright 2015 jurgen leschner (github/jldec) - MIT license
 
 $(function(){

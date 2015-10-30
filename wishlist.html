@@ -20,31 +20,41 @@
 <div class="box bg3 x-large white bg-darker center shadow" style='background-image:url("./images/IMG_1273.jpg"); background-size:cover;'><div data-render-html="/wishlist"><h1 id="wishlist-for-github-pages">Wishlist for GitHub Pages</h1>
 <p><a href="./">brief</a></p>
 </div></div>
-<div class="box bg0 " ><div data-render-html="/wishlist#box-1"><h2 id="1-https">1. https</h2>
+<div class="box bg0 " ><div data-render-html="/wishlist#box-0"><h2 id="usability">Usability</h2>
+<p><em>This section was added 2015-10-23.</em></p>
+<p>Using a special <code>gh-pages</code> branch instead of a separate repo makes publishing  on GitHub Pages unnecessarily complicated.</p>
+<blockquote>
+<p>Why can&#39;t GitHub Pages work more like wikis?</p>
+</blockquote>
+<p>Wikis have their own git repository at <code>&lt;id&gt;/&lt;main-repo&gt;.wiki.git</code> which you can clone and pull/commit/push on <code>master</code>. This wiki repository is open by default for other GitHub users to edit -- something you just can&#39;t do with your <code>gh-pages</code> branch.</p>
+<p>GitHub Pages sites should behave the same way. Pages sites should have their own repo for the ouput HTML, with a URL in the same domain as the source repo.</p>
+<p>Now you could start doing things like hosting a staging site visible only to collaborators, or previewing a new generated site on your desktop before publishing it <span class="fa">&#xf118;</span>.</p>
+</div></div>
+<div class="box bg1 " ><div data-render-html="/wishlist#box-1"><h2 id="1-https">1. https</h2>
 <p>These days, because of attack vectors like <a href="http://www.thoughtcrime.org/software/sslstrip/" target="_blank">ssl-stripping</a>, I would argue that any site with a form should be running over https. It&#39;s not enough for <em>only</em> the form pages or post-urls to be encrypted.  And with <a href="https://en.wikipedia.org/wiki/Server_Name_Indication" target="_blank">SNI</a>, hosting HTTPS endpoints has become relatively inexpensive.</p>
 </div></div>
-<div class="box bg1 " ><div data-render-html="/wishlist#box-2"><h2 id="2-generic-form-handlers">2. generic form handlers</h2>
+<div class="box bg2 " ><div data-render-html="/wishlist#box-2"><h2 id="2-generic-form-handlers">2. generic form handlers</h2>
 <p>Casual users don&#39;t require complex back-end services to handle forms for things like surveys and contact requests. Translating each form submit into an email, or collecting form-field contents into a spreadsheet is sufficient.</p>
 <p>More complex multi-step forms such as those required for payments require custom-configured services (see proxy routes below).</p>
 </div></div>
-<div class="box bg2 " ><div data-render-html="/wishlist#box-3"><h2 id="3-private-pages">3. private pages</h2>
+<div class="box bg3 " ><div data-render-html="/wishlist#box-3"><h2 id="3-private-pages">3. private pages</h2>
 <p>Marking pages or directory paths or an entire site as private would be a high-value, low-cost feature for GitHub Pages, and would serve many use-cases.</p>
 <p>Design agencies could publish previews for their customers to try out, or companies could create internal sites on accessible only to their employees.</p>
 <p>Simple access control lists in a text file coupled with oauth would be a good start.</p>
 </div></div>
-<div class="box bg3 " ><div data-render-html="/wishlist#box-4"><h2 id="4-granular-authz">4. granular authz</h2>
+<div class="box bg4 " ><div data-render-html="/wishlist#box-4"><h2 id="4-granular-authz">4. granular authz</h2>
 <p>For users to manage website content using 3rd-party tools with sites on GitHub Pages, those tools need to be able to write back to a GitHub repo without asking the owner for blanket write access to all their repos. &#39;Nuf said :)</p>
 </div></div>
-<div class="box bg4 " ><div data-render-html="/wishlist#box-5"><h2 id="5-more-site-generators">5. more site generators</h2>
+<div class="box bg0 " ><div data-render-html="/wishlist#box-5"><h2 id="5-more-site-generators">5. more site generators</h2>
 <p>Language frameworks like JavaScript and React are rapidly picking up momentum.  </p>
 <p>Opening the door for alternative <a href="https://github.com/jldec/pub-server" target="_blank">site generators</a> to be run automatically when new content arrives in a repo (just like Jekyll) is important to keep the service attractive for developers who build sites with the latest tools.</p>
 </div></div>
-<div class="box bg0 " ><div data-render-html="/wishlist#box-6"><h2 id="6-proxy-routes">6. proxy routes</h2>
+<div class="box bg1 " ><div data-render-html="/wishlist#box-6"><h2 id="6-proxy-routes">6. proxy routes</h2>
 <p>In the past, mobile browser users were unable to see or block the traffic between pages they visit and 3rd party tracking services (or services posing as something else, but collecting data nevertheless). This era is thankfully coming to end.</p>
 <p>A better way for users to interact with websites they trust, is for <em>all</em> traffic to go back through the same HTTPS endpoint.</p>
 <p>The role of a static hosting service in all this is to proxy those requests matching specific routes, and forward them to real-time services on the back-end.</p>
 </div></div>
-<div class="box bg1 " ><div data-render-html="/wishlist#box-7"><h2 id="7-online-content-editor">7. online content editor</h2>
+<div class="box bg2 " ><div data-render-html="/wishlist#box-7"><h2 id="7-online-content-editor">7. online content editor</h2>
 <blockquote>
 <p>This is the elephant in the room when it comes to static site generators and  GitHub Pages.</p>
 </blockquote>
@@ -53,8 +63,7 @@
 <p>pub-server includes an editor+generator which can run in users&#39; browsers, allowing instant preview without round-trips to a server.</p>
 <p>For more information visit the pub-server repo on <a href="https://github.com/jldec/pub-server" target="_blank">github</a>.</p>
 </div></div>
-<div class="box bg2 " ><div data-render-html="/wishlist#box-end"><h1 id="thank-you-">Thank You.</h1>
-<p><img src="./images/run2.jpg" alt=""></p>
+<div class="box bg3 " ><div data-render-html="/wishlist#box-end"><h1 id="thank-you-">Thank You.</h1>
 </div></div>
 </div>
 
@@ -63,9 +72,9 @@
 </div>
 
 <script>window.pubRef = {"href":"/wishlist","relPath":"."};</script>
-<script src="./js/jquery-1.11.3.min.js"></script>
-<script src="./js/hammer.min.js"></script>
-<script src="./js/brief.js"></script>
-<script src="./server/pub-ux.js"></script>
+<script src="./js/jquery-1.11.3.min.js" ></script>
+<script src="./js/hammer.min.js" ></script>
+<script src="./js/brief.js" ></script>
+<script src="./server/pub-ux.js" ></script>
 </body>
 </html>
