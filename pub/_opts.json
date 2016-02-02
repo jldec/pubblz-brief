@@ -5,8 +5,8 @@
   "no-watch": true,
   "no-sockets": true,
   "editor": true,
-  "user": "hello",
-  "basedir": "/Users/hello/pub/pubblz-brief",
+  "user": "jldec",
+  "basedir": "/Users/jldec/pub/pubblz-brief",
   "pkgJson": {
     "name": "pubblz-brief-src",
     "version": "1.1.0",
@@ -31,7 +31,7 @@
       "writable": true,
       "name": "markdown",
       "type": "FILE",
-      "tmp": "/Users/hello/.tmp/markdown",
+      "tmp": "/Users/jldec/.tmp/markdown",
       "watch": {},
       "fragmentDelim": true,
       "files": [
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "path": "/Users/hello/pub/pubblz-brief/node_modules/pub-theme-brief/templates",
+      "path": "/Users/jldec/pub/pubblz-brief/node_modules/pub-theme-brief/templates",
       "_pkg": "pub-theme-brief",
       "name": "templates",
       "type": "FILE",
@@ -75,7 +75,7 @@
       ]
     },
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-seo/src",
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-seo/src",
       "fragmentDelim": 1,
       "_pkg": "pub-pkg-seo",
       "name": "src",
@@ -97,7 +97,7 @@
       ]
     },
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-editor/src",
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-editor/src",
       "route": "/pub",
       "_pkg": "pub-pkg-editor",
       "name": "_src",
@@ -111,7 +111,7 @@
         },
         {
           "path": "/editor-layout.hbs",
-          "text": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>pub editor</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<link rel=\"stylesheet\" href=\"{{relPath}}/pub/css/normalize.css\">\n<link rel=\"stylesheet\" href=\"{{relPath}}/pub/css/editor.css\">\n<link rel=\"stylesheet\" href=\"{{relPath}}/pub/humane-js/flatty.css\">\n</head>\n<body>\n<div class=\"handle leftright\"></div>\n\n<div class=\"outer col\">\n\n<div class=\"header row\">\n  <!--div class=\"menubutton col clickable\"> ☰ </div-->\n  <div class=\"savebutton col clickable hide\" title=\"save\"> ✓ </div>\n  <div class=\"name col\"></div>\n  <div class=\"editbutton col clickable\" title=\"fragments\"> ✍ </div>\n  <!--div class=\"helpbutton col clickable\" title=\"help\"> ? </div-->\n</div>\n\n<div class=\"main row\">\n  <div class=\"editorpane left col\">\n    <div class=\"list row shadow\"></div>\n    <!--iframe class=\"form row shadow\" src=\"{{relPath}}/admin/upload\"></iframe-->\n    <textarea class=\"editor row\"></textarea></div>\n  <div class=\"previewpane right col\"><iframe class=\"preview\" src=\"{{relPath}}/\"></iframe></div>\n</div>\n\n</div>\n\n<script src=\"{{relPath}}/js/jquery-1.11.3.min.js\"></script>\n<script src=\"{{relPath}}/pub/js/editor-ui.js\"></script>\n<script src=\"{{relPath}}/pub/_generator.js\"></script>\n\n</body>\n</html>\n"
+          "text": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>pub editor</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<link rel=\"stylesheet\" href=\"{{relPath}}/pub/css/normalize.css\">\n<link rel=\"stylesheet\" href=\"{{relPath}}/pub/css/editor.css\">\n<link rel=\"stylesheet\" href=\"{{relPath}}/pub/humane-js/flatty.css\">\n</head>\n<body>\n<div class=\"handle leftright\"></div>\n\n<div class=\"outer col\">\n\n<div class=\"header row\">\n  <!--div class=\"menubutton col clickable\"> ☰ </div-->\n  <div class=\"savebutton col clickable hide\" title=\"save\"> ✓ </div>\n  <div class=\"name col\"></div>\n  <div class=\"editbutton col clickable\" title=\"fragments\"> ✍ </div>\n  <!--div class=\"helpbutton col clickable\" title=\"help\"> ? </div-->\n</div>\n\n<div class=\"main row\">\n  <div class=\"editorpane left col\">\n    <div class=\"list row shadow\"></div>\n    <!--iframe class=\"form row shadow\" src=\"{{relPath}}/admin/upload\"></iframe-->\n    <textarea class=\"editor row\"></textarea></div>\n  <div class=\"previewpane right col\"><iframe class=\"preview\" src=\"{{relPath}}/\"></iframe></div>\n</div>\n\n</div>\n<script>window.pubRef = {\"href\":\"/pub/\",\"relPath\":\"..\"};</script>\n<script src=\"{{relPath}}/js/jquery-1.11.3.min.js\"></script>\n<script src=\"{{relPath}}/pub/js/editor-ui.js\"></script>\n<script src=\"{{relPath}}/pub/_generator.js\"></script>\n\n</body>\n</html>\n"
         },
         {
           "path": "/editor-updates.hbs",
@@ -119,14 +119,14 @@
         },
         {
           "path": "/editor-upload.hbs",
-          "text": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>pub editor - {{title}}</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<link rel=\"stylesheet\" href=\"{{relPath}}/css/normalize.css\">\n<link rel=\"stylesheet\" href=\"{{relPath}}/css/editor.css\">\n</head>\n<body>\n<div class=\"upload\">\n<h3>{{title}}</h3>\n<form method=\"POST\" enctype=\"multipart/form-data\">\n{{{html}}}\n</form>\n{{#eachUpload}}<pre>![](/images/{{{title}}}){{s3Err}}\n</pre>\n<img src=\"{{option 'fqImages'}}/images/{{title}}\"><br>\n{{option 'fqImages'}}/images/{{title}}\n{{/eachUpload}}\n</div>\n<script src=\"{{relPath}}/pub/js/jquery-1.11.2.min.js\"></script>\n</body>\n</html>\n"
+          "text": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>pub editor - {{title}}</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<link rel=\"stylesheet\" href=\"{{relPath}}/css/normalize.css\">\n<link rel=\"stylesheet\" href=\"{{relPath}}/css/editor.css\">\n</head>\n<body>\n<div class=\"upload\">\n<h3>{{title}}</h3>\n<form method=\"POST\" enctype=\"multipart/form-data\">\n{{{html}}}\n</form>\n{{#eachUpload}}<pre>![](/images/{{{title}}}){{s3Err}}\n</pre>\n<img src=\"{{option 'fqImages'}}/images/{{title}}\"><br>\n{{option 'fqImages'}}/images/{{title}}\n{{/eachUpload}}\n</div>\n<script src=\"{{relPath}}/pub/js/jquery-1.11.3.min.js\"></script>\n</body>\n</html>\n"
         }
       ]
     }
   ],
   "staticPaths": [
     {
-      "path": "/Users/hello/pub/pubblz-brief/static",
+      "path": "/Users/jldec/pub/pubblz-brief/static",
       "watch": {},
       "route": "/",
       "depth": 5,
@@ -137,11 +137,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/pubblz-brief/static"
+        "root": "/Users/jldec/pub/pubblz-brief/static"
       }
     },
     {
-      "path": "/Users/hello/pub/pubblz-brief/README.md",
+      "path": "/Users/jldec/pub/pubblz-brief/README.md",
       "watch": {},
       "route": "/",
       "depth": 5,
@@ -152,11 +152,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/pubblz-brief"
+        "root": "/Users/jldec/pub/pubblz-brief"
       }
     },
     {
-      "path": "/Users/hello/pub/pubblz-brief/CNAME",
+      "path": "/Users/jldec/pub/pubblz-brief/CNAME",
       "watch": {},
       "route": "/",
       "depth": 5,
@@ -167,11 +167,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/pubblz-brief"
+        "root": "/Users/jldec/pub/pubblz-brief"
       }
     },
     {
-      "path": "/Users/hello/pub/pubblz-brief/.gitignore",
+      "path": "/Users/jldec/pub/pubblz-brief/.gitignore",
       "watch": {},
       "route": "/",
       "depth": 5,
@@ -182,11 +182,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/pubblz-brief"
+        "root": "/Users/jldec/pub/pubblz-brief"
       }
     },
     {
-      "path": "/Users/hello/pub/pubblz-brief/.nojekyll",
+      "path": "/Users/jldec/pub/pubblz-brief/.nojekyll",
       "watch": {},
       "route": "/",
       "depth": 5,
@@ -197,11 +197,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/pubblz-brief"
+        "root": "/Users/jldec/pub/pubblz-brief"
       }
     },
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-jquery/js/jquery-1.11.3.min.js",
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-jquery/js/jquery-1.11.3.min.js",
       "route": "/js",
       "inject": true,
       "maxAge": "30d",
@@ -214,11 +214,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/server/node_modules/pub-pkg-jquery/js"
+        "root": "/Users/jldec/pub/server/node_modules/pub-pkg-jquery/js"
       }
     },
     {
-      "path": "/Users/hello/pub/pubblz-brief/node_modules/pub-theme-brief/css/brief.css",
+      "path": "/Users/jldec/pub/pubblz-brief/node_modules/pub-theme-brief/css/brief.css",
       "route": "/css",
       "inject": true,
       "_pkg": "pub-theme-brief",
@@ -231,11 +231,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/pubblz-brief/node_modules/pub-theme-brief/css"
+        "root": "/Users/jldec/pub/pubblz-brief/node_modules/pub-theme-brief/css"
       }
     },
     {
-      "path": "/Users/hello/pub/pubblz-brief/node_modules/pub-theme-brief/js/hammer.min.js",
+      "path": "/Users/jldec/pub/pubblz-brief/node_modules/pub-theme-brief/js/hammer.min.js",
       "route": "/js",
       "inject": true,
       "_pkg": "pub-theme-brief",
@@ -248,11 +248,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/pubblz-brief/node_modules/pub-theme-brief/js"
+        "root": "/Users/jldec/pub/pubblz-brief/node_modules/pub-theme-brief/js"
       }
     },
     {
-      "path": "/Users/hello/pub/pubblz-brief/node_modules/pub-theme-brief/js/brief.js",
+      "path": "/Users/jldec/pub/pubblz-brief/node_modules/pub-theme-brief/js/brief.js",
       "route": "/js",
       "inject": true,
       "_pkg": "pub-theme-brief",
@@ -265,11 +265,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/pubblz-brief/node_modules/pub-theme-brief/js"
+        "root": "/Users/jldec/pub/pubblz-brief/node_modules/pub-theme-brief/js"
       }
     },
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-font-open-sans/open-sans.css",
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-font-open-sans/open-sans.css",
       "route": "/css",
       "inject": true,
       "_pkg": "pub-pkg-font-open-sans",
@@ -282,11 +282,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/server/node_modules/pub-pkg-font-open-sans"
+        "root": "/Users/jldec/pub/server/node_modules/pub-pkg-font-open-sans"
       }
     },
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-font-open-sans/node_modules/open-sans-fontface/fonts",
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-font-open-sans/node_modules/open-sans-fontface/fonts",
       "route": "/css/fonts",
       "glob": "**/*.{eot,woff,woff2}",
       "maxAge": "1000d",
@@ -299,11 +299,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/server/node_modules/pub-pkg-font-open-sans/node_modules/open-sans-fontface/fonts"
+        "root": "/Users/jldec/pub/server/node_modules/pub-pkg-font-open-sans/node_modules/open-sans-fontface/fonts"
       }
     },
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/fonts",
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-font-awesome/fonts",
       "route": "/fonts",
       "_pkg": "pub-pkg-font-awesome",
       "watch": false,
@@ -315,11 +315,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/fonts"
+        "root": "/Users/jldec/pub/server/node_modules/pub-pkg-font-awesome/fonts"
       }
     },
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/css/font-awesome.css",
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-font-awesome/css/font-awesome.css",
       "route": "/css",
       "inject": true,
       "_pkg": "pub-pkg-font-awesome",
@@ -332,11 +332,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/css"
+        "root": "/Users/jldec/pub/server/node_modules/pub-pkg-font-awesome/css"
       }
     },
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-editor/static/css",
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-editor/static/css",
       "route": "/pub/css",
       "_pkg": "pub-pkg-editor",
       "watch": false,
@@ -348,11 +348,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/server/node_modules/pub-pkg-editor/static/css"
+        "root": "/Users/jldec/pub/server/node_modules/pub-pkg-editor/static/css"
       }
     },
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-editor/node_modules/humane-js/themes/flatty.css",
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-editor/node_modules/humane-js/themes/flatty.css",
       "route": "/pub/humane-js",
       "_pkg": "pub-pkg-editor",
       "watch": false,
@@ -364,44 +364,44 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/server/node_modules/pub-pkg-editor/node_modules/humane-js/themes"
+        "root": "/Users/jldec/pub/server/node_modules/pub-pkg-editor/node_modules/humane-js/themes"
       }
     }
   ],
   "outputs": [
     {
-      "path": "/Users/hello/pub/pubblz-brief/out",
+      "path": "/Users/jldec/pub/pubblz-brief/out",
       "relPaths": true,
       "name": "out",
       "writable": true,
       "type": "FILE",
-      "tmp": "/Users/hello/.tmp/out",
+      "tmp": "/Users/jldec/.tmp/out",
       "watch": {}
     }
   ],
   "browserScripts": [
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-editor/client/editor-ui.js",
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-editor/client/editor-ui.js",
       "route": "/pub/js/editor-ui.js",
       "_pkg": "pub-pkg-editor"
     },
     {
-      "path": "/Users/hello/pub/preview/pub-preview.js",
+      "path": "/Users/jldec/pub/preview/pub-preview.js",
       "route": "/pub/js/pub-preview.js",
       "_pkg": "pub-pkg-editor"
     }
   ],
   "generatorPlugins": [
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-seo/generator-plugin.js",
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-seo/generator-plugin.js",
       "_pkg": "pub-pkg-seo"
     },
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/generator-plugin.js",
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-font-awesome/generator-plugin.js",
       "_pkg": "pub-pkg-font-awesome"
     },
     {
-      "path": "/Users/hello/pub/pubblz-brief/node_modules/pub-theme-brief/plugins/generator-plugin.js",
+      "path": "/Users/jldec/pub/pubblz-brief/node_modules/pub-theme-brief/plugins/generator-plugin.js",
       "_pkg": "pub-theme-brief"
     }
   ],
@@ -452,7 +452,7 @@
         "license": "MIT"
       },
       "pkgName": "pub-pkg-jquery",
-      "dir": "/Users/hello/pub/server/node_modules/pub-pkg-jquery"
+      "dir": "/Users/jldec/pub/server/node_modules/pub-pkg-jquery"
     },
     {
       "path": "pub-theme-brief",
@@ -474,7 +474,7 @@
         "license": "MIT"
       },
       "pkgName": "pub-theme-brief",
-      "dir": "/Users/hello/pub/pubblz-brief/node_modules/pub-theme-brief"
+      "dir": "/Users/jldec/pub/pubblz-brief/node_modules/pub-theme-brief"
     },
     {
       "path": "pub-pkg-font-open-sans",
@@ -510,7 +510,7 @@
         "license": "MIT AND Apache-2.0"
       },
       "pkgName": "pub-pkg-font-open-sans",
-      "dir": "/Users/hello/pub/server/node_modules/pub-pkg-font-open-sans"
+      "dir": "/Users/jldec/pub/server/node_modules/pub-pkg-font-open-sans"
     },
     {
       "path": "pub-pkg-font-awesome",
@@ -542,7 +542,7 @@
         "license": "MIT AND OFL-1.1"
       },
       "pkgName": "pub-pkg-font-awesome",
-      "dir": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome"
+      "dir": "/Users/jldec/pub/server/node_modules/pub-pkg-font-awesome"
     },
     {
       "path": "pub-pkg-seo",
@@ -566,13 +566,13 @@
         "license": "MIT"
       },
       "pkgName": "pub-pkg-seo",
-      "dir": "/Users/hello/pub/server/node_modules/pub-pkg-seo"
+      "dir": "/Users/jldec/pub/server/node_modules/pub-pkg-seo"
     },
     {
       "path": "pub-pkg-editor",
       "pkgJson": {
         "name": "pub-pkg-editor",
-        "version": "1.5.2",
+        "version": "1.5.3",
         "description": "simple markdown editor for pub-server",
         "main": "pub-config.js",
         "dependencies": {
@@ -588,7 +588,7 @@
         "license": "MIT"
       },
       "pkgName": "pub-pkg-editor",
-      "dir": "/Users/hello/pub/server/node_modules/pub-pkg-editor"
+      "dir": "/Users/jldec/pub/server/node_modules/pub-pkg-editor"
     }
   ],
   "appUrl": "http://about.pubblz.com/",
@@ -615,7 +615,7 @@
       "license": "MIT"
     },
     "pkgName": "pub-theme-brief",
-    "dir": "/Users/hello/pub/pubblz-brief/node_modules/pub-theme-brief"
+    "dir": "/Users/jldec/pub/pubblz-brief/node_modules/pub-theme-brief"
   },
   "_resolved": true,
   "production": false,
