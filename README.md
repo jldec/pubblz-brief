@@ -1,6 +1,6 @@
 # pubblz brief
 
-http://about.pubblz.com/
+https://about.pubblz.com/
 
 This website is generated from markdown using [pub-server](http://jldec.github.io/pub-doc)
 
